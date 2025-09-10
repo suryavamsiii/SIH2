@@ -1,0 +1,95 @@
+Smart Timetable Management
+
+Auto-updated schedule.
+
+Show next class, time, and room number on dashboard.
+
+Notifications/reminders before the next class.
+
+Teachers/Admin can update timetable.
+
+Curriculum Tracking → Track syllabus completion with progress percentage.
+
+Multi-Language UI → English, Hindi, and regional languages.
+
+Assignments & Projects → Upload, track deadlines, send reminders, allow submissions.
+
+Exams & Mock Tests → Upload question papers, attempt mock tests, analyze weak areas.
+
+Smart Notice Board → Show events, holidays, deadlines (personalized).
+
+AI Assistant (Powered by Gemini AI)
+
+Integrate Google Gemini API.
+
+Students can ask questions about syllabus, timetable, assignments, exams, or general study help.
+
+Multi-language responses (using Gemini translation capability).
+
+Help Desk → Students raise issues (academic/admin/technical), track status, and resolve.
+
+Clubs & Activities → Registration for cultural, sports, and tech clubs.
+
+Class Notes & Resources → Teachers upload notes after each class.
+
+Monthly Feedback → Students submit anonymous feedback about teaching/resources.
+
+Smart Student ID with QR Attendance
+
+Each student profile has a digital ID card with unique QR code.
+
+Teachers scan QR to mark attendance instantly.
+
+Attendance auto-updates in DB + student dashboard.
+
+⚙️ Tech Stack
+
+Frontend: React + TailwindCSS
+
+Backend: Node.js + Express
+
+Database: MongoDB
+
+Authentication: JWT (students, teachers, admin)
+
+QR System: qrcode (backend) + qrcode.react (frontend)
+
+AI Assistant: Google Gemini AI API integration
+
+📦 Deliverables
+
+Database Models: Students, Teachers, Timetable, Classes, Attendance, Assignments, Notices, Feedback.
+
+Backend APIs:
+
+/api/timetable → next class, time, room
+
+/api/attendance → QR attendance marking
+
+/api/ai-assistant → queries to Gemini API
+
+/api/assignments, /api/notices, /api/feedback
+
+Frontend Pages:
+
+Student Dashboard (next class + QR ID card)
+
+Teacher Dashboard (scan QR, upload notes)
+
+Admin Dashboard (timetable, notices, feedback)
+
+Digital Student ID page with QR code
+
+AI Assistant Chat Interface (Gemini-powered chatbot)
+
+Assignments Page
+
+Feedback Form
+
+Gemini AI Integration:
+
+Use Gemini API (via @google/generative-ai package in Node.js).
+
+Secure API key storage (env variables).
+
+AI chat UI in frontend with streaming responses
